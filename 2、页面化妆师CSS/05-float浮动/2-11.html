@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style type="text/css">
+    .clear{
+        clear: both; /*方法一添加空元素*/
+    }
+    .clearfix:after{    /*方法三*/
+        content: '.';
+        height:0;
+        display: block;
+        visibility: hidden;
+        clear: both;
+    }
+    .clearfix{
+        zoom:1;
+    }
+    .container{
+        width:500px;
+        /*height:500px;*/
+        border:2px solid #333;
+        /*overflow: hidden; /*清楚浮动方法二*/
+        /*zoom:1;*/
+    }
+    .box01{
+        width:100px;
+        height:100px;
+        background:blue;
+        color:#fff;
+        float: left;
+    }
+    .box02{
+        width:100px;
+        height:100px;
+        background:red;
+        color:#fff;
+        float: left;
+    }
+    .box03{
+        width:100px;
+        height:100px;
+        background:orange;
+        color:#fff;
+        float: left;
+    }
+    .box04{
+        width: 500px;
+        height: 200px;
+        background: green;
+    }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="box01" align="center">11111</div>
+        <div class="box02">22222</div>
+        <div class="box03">33333</div>
+        <!-- <div class="clear"></div> -->
+    </div>
+    <div class="box04">444444</div>
+</body>
+</html>

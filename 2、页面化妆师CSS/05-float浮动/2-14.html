@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2-14编程练习</title>
+    <style type="text/css">
+        .per{
+            width: 300px;
+            height: auto;
+            border: 2px solid #aaa;
+            /*overflow: hidden;
+            zoom:1;*/   /*方法二*/
+        }
+        .li{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 5px;
+            float: left;
+        }
+        .clear{
+            clear: both;   /*方法一*/
+        }
+        .clearfix:after{
+            content: '.';
+            height: 0;
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+        .clearfix{
+            zoom:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="per clearfix">
+        <div class="li"></div>
+        <div class="li"></div>
+        <!-- <div class="clear"></div> -->
+    </div>
+</body>
+</html>
