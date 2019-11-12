@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style type="text/css">
+        .block{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            border: 2px solid black;
+            float: left;
+        }
+        .block:nth-child(2){
+            position: relative;
+            top: 0px;
+            left:-80px;
+            border-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">A</div>
+    <div class="block">B</div>
+    <!-- <div class="block">C</div> -->
+</body>
+</html>

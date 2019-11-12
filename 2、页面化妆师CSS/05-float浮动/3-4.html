@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3-4编程练习</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:789px;
+            border:1px dashed gray;
+            padding-left:21px;
+            padding-bottom: 21px;
+            /*overflow: hidden;*/
+        }
+        .clearfix{
+            content: '.';
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+        .container>div{
+            width:240px;
+            height:160px;
+            /*border:1px dashed gray;*/
+            margin:21px 21px 0  0;
+            float: left;
+        }
+        .con{
+
+            border:1px solid gray;
+            padding-left: 3px; 
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        div.img{
+            width:240px;
+            height:135px;
+        }
+        /*设置背景图片*/
+        div.one{
+            background-image:url(http://climg.mukewang.com/590fe9770001e63102400135.jpg);
+ 
+        }
+        div.two{
+            background-image:url(http://climg.mukewang.com/590fe97d00011bda02400135.jpg);
+ 
+        }
+        div.three{
+            background-image:url(http://climg.mukewang.com/590fe982000150ba02400135.jpg);
+ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div >
+            <div class="img one"></div>
+            <div class="con">欢迎来到慕课网学习新知识！</div>
+        </div>
+        <div >
+            <div class="img two"></div>
+            <div class="con">欢迎来到慕课网学习新知识！</div>
+        </div>
+        <div >
+            <div class="img three"></div>
+            <div class="con">欢迎来到慕课网学习新知识！</div>
+        </div>
+        <div >
+            <div class="img one"></div>
+            <div class="con">欢迎来到慕课网学习新知识！</div>
+        </div>
+        <div >
+            <div class="img two"></div>
+            <div class="con">欢迎来到慕课网学习新知识！</div>
+        </div>
+        <div >
+            <div class="img three"></div>
+            <div class="con">欢迎来到慕课网学习新知识！</div>
+        </div>
+
+    </div>
+</body>
+</html>
