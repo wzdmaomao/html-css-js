@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>position-relative</title>
     <link rel="stylesheet" href="./reset.css">
     <style type="text/css">
         .block{
@@ -15,12 +15,15 @@
             text-align: center;
             border: 2px solid black;
             float: left;
+            z-index: 9
         }
         .block:nth-child(2){
             position: relative;
             top: 0px;
             left:-80px;
+            z-index: 9
             border-color:red;
+            z-index: 1;
         }
     </style>
 </head>
