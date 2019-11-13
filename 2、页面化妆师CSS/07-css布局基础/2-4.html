@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-4编程练习</title>
+    <style>
+    /*http://climg.mukewang.com/58c0d2d900016ce303000100.png*/
+    *{padding: 0;margin: 0; /*color: #fff;*/}
+    .container{
+        width: 1100px;
+        height: 100px;
+        background: black;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left:-550px;
+        margin-top: -50px;
+        overflow: hidden;
+        zoom:1;
+            }
+    .logo{
+        width: 300px;
+        height: 100px;
+        line-height: 100px;
+        float: left;
+        background: url(http://climg.mukewang.com/58c0d2d900016ce303000100.png);
+    }
+    .nav{
+            list-style: none;
+            padding-right: 40px;
+            float: right;
+            overflow: hidden;
+            zoom:1;
+        }
+    .nav li{
+        float: left;
+        margin-right: 20px;
+    }  
+    .nav li a{
+        text-decoration: none;
+        padding: 0 20px;
+        height: 100px;
+        line-height: 100px;
+        font-family: "微软雅黑";
+        text-align: center;
+        font-size: 26px;
+        color: #fff;
+    } 
+    .nav li a:hover{
+            color: blue;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <ul class="nav">
+            <li><a href="#">免费课程</a></li>
+            <li><a href="#">职业路径</a></li>
+            <li><a href="#">实战</a></li>
+            <li><a href="#">猿问</a></li>
+            <li><a href="#">手记</a></li>
+        </ul>
+    </div>
+</body>
+</html>
