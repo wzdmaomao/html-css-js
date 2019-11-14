@@ -1,71 +1,207 @@
-<!DOCTYPE html>
-<html>
-  
-  <head>
-    <title>demo</title>
-    <style type="text/css">
-         *{ margin:0; padding: 0; } 
-         .banner{ width: 100%; height: 100px; background-color: black; } 
-         .logo{ float: left; line-height: 100px; display: block; height: 100px; } 
-         .nav{ float: right; } 
-         .nav li{ color: white; float: left; line-height: 100px; list-style: none; margin-right: 45px; } 
-         .con{ width: 100%; height: 447px; background:#add8e6; padding-top: 100px; } 
-         .con li{ list-style: none; cursor: pointer; } 
-         .left{ float: left; } 
-         .right{ float: right; }
-          .left li,.left h3{ padding-left: 280px; margin-bottom:1.5em; } 
-          .right li,.right h3{ padding-right:400px; margin-bottom:1.5em; } 
-          .left span{ background:#ff9999; } 
-          .footer{ width: 100%; height: 100px; background:black; } .footer li{ list-style: none; color:white; display: inline; line-height: 100px; }
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+ 
+        <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style:none;
+        }
+        body{
+            min-width:1070px;
+            min-height:500px;
+            font-family:"宋体","微软雅黑",serif;
+        }
+        .header,.footer{
+            position:fixed;
+            width:100%;
+            height:75px;   
+            
+        }
+        .header{
+            left:0;
+            top:0;
+            background:black;
+            z-index:9999;
+            
+        }
+        .header .logo{
+            position:absolute;
+            height:100%;
+ 
+        }
+        .logo img{
+            height:100%;
+        }
+ 
+        .header .navigation{
+            float:right;
+            width:40%;
+            line-height:75px;
+            
+        }
+        .navigation ul li{
+            float:left;
+            color:white;  
+            margin-left:8%;
+        }
+        .navigation ul li:hover{
+            color:orange;
+            cursor:pointer;
+        }
+ 
+ 
+        .footer{
+            left:0;
+            bottom:0;
+            background:black;
+            color:white;
+            display:table;
+        }
+        .footer>span{
+            display:table-cell;
+            text-align:center;
+            line-height:75px;
+        }
+        .footer>span span{
+            display:inline-block;
+            margin-left:2em;
+        }
+ 
+        .container{ 
+            margin:75px  270px  75px  400px;
+            width:auto;  
+            height:700px;
+            
+        }
+        /* 问题：采用这种方式，通过背景发现，主体内容较多时，会在鼠标滑块下移时，遮挡头部导航块，如何处理?通过z-index设置层叠顺序 */
+        .container:after{
+            content:".";
+            display:block;
+            visibility:hidden;
+            font-size:0;
+            clear:both;
+        }
+        .container{zoom:1;}
+        
+ 
+        .middle,.left,.right{
+            float:left;
+            position:relative;
+            height:100%;
+            padding-top:95px;;
+            
+        }
+        .middle{
+            width:100%;
+            background-color:rgb(255,192,203);
+            text-align:center;
+        }
+        .left{
+ 
+            
+            width:400px;
+            margin-left:-100%;
+            left:-400px;  
+            background-color:rgb(255,239,219);
+            
+        }
+        .left h3,.left li{
+            margin-bottom:6%;
+            padding-left:5%;
+        }
+        .left ul li span:nth-child(1){
+            background-color:rgb(255,153,153);
+            display:inline-block;
+            margin-right:4%;
+            
+        }
+ 
+        .right{   
+            width:270px;
+            margin-left:-270px;
+            right:-270px;
+            background-color:rgb(173,216,230);
+           
+        }
+         .right h3,
+        .right .input{
+ 
+            margin-bottom:5%;
+            margin-left:2%; 
+            
+        } 
+        .right .input{
+            display:float;
+            width:90%;
+            display:block;
+            height:2em;
+            line-height:2em;
+ 
+        }
+        input{
+            border:none;
+            padding:0;
+            outline:none;   
+        }
+        .right .login{
+            background-color:red;
+            font-family:"微软雅黑";
+        }
+ 
+ 
+ 
         </style>
-      </head>
-  
-  <body>
-    <div class="banner">
-      <div class="logo">
-        <img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png"></div>
-      <div class="nav">
-        <ul>
-          <li>课程</li>
-          <li>职业路径</li>
-          <li>实战</li>
-          <li>猿问</li>
-          <li>手记</li></ul>
-      </div>
-    </div>
-    <div class="con">
-      <div class="left">
-        <h3>课程推荐</h3>
-        <ul>
-          <li>
-            <span>职业路径</span>&nbsp;&nbsp;&nbsp;HTML5与CSS3实现动态网页</li>
-          <li>
-            <span>职业路径</span>&nbsp;&nbsp;&nbsp;零基础入门Android语法与界面</li>
-          <li>
-            <span>职业路径</span>&nbsp;&nbsp;&nbsp;iOS基础语法与常用控件</li>
-          <li>
-            <span>职业路径</span>&nbsp;&nbsp;&nbsp;PHP入门开发</li>
-          <li>
-            <span>职业路径</span>&nbsp;&nbsp;&nbsp;JAVA入门开发</li></ul>
-      </div>
-      <div class="right">
-        <h3>相关课程</h3>
-        <ul>
-          <li>HTML&nbsp;CSS&nbsp;JavaScript</li>
-          <li>HTML5&nbsp;CSS3&nbsp;Jquery</li>
-          <li>移动端基础&nbsp;移动端APP开发</li></ul>
-      </div>
-    </div>
-    <div class="footer">
-      <ul>
-        <li>网站首页</li>
-        <li>企业合作</li>
-        <li>人才招聘</li>
-        <li>联系我们</li>
-        <li>常见问题</li>
-        <li>友情链接</li></ul>
-    </div>
-    </div>
-  </body>
-
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo"><img src="http://climg.mukewang.com/590037f600016ce303000100.png" alt="logo"></div>
+            <div class="navigation">
+                <ul>
+                    <li>课程</li>
+                    <li>职业路径</li>
+                    <li>实战</li>
+                    <li>猿问</li>
+                    <li>手记</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="middle">
+                <img src="http://climg.mukewang.com/590037e00001fab706000400.jpg" alt="middle">
+            </div>
+            <div class="left">
+                <h3>课程推荐</h3>
+                <ul>
+                    <li><span>职业路径</span><span>HTML5与CSS3实现动态网页</span></li>
+                    <li><span>职业路径</span><span>零基础入门Android语法与界面</span></li>
+                    <li><span>职业路径</span><span>IOS基础语法与常用控件</span></li>
+                    <li><span>职业路径</span><span>PHP入门开发</span></li>
+                    <li><span>职业路径</span><span>JAVA入门开发</span></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3>登录</h3>
+                <input class="account  input" type="text" placeholder="请输入邮箱/手机号">
+                <input class="password input" type="text" placeholder="6-16位密码，区分大小写，不能用空格">
+                <input class="login input" type="button" value="登录">
+            </div>
+        </div>
+        <div class="footer">
+            <span>
+                <span>网站首页</span>
+                <span>企业合作</span>
+                <span>人才招聘</span>
+                <span>联系我们</span>
+                <span>常见问题</span>
+                <span>友情链接</span>
+            </span>
+ 
+        </div>
+    </body>
 </html>

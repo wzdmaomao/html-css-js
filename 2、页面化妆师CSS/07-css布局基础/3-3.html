@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3-3编程练习</title>
+	<style>
+		*{margin: 0;padding:0;}
+		.page{
+			width: 100%;
+			height: 1000px;
+		}
+		.header,.footer {
+			width: 100%;
+			height: 75px;
+			background: black;
+			/*margin: 0 auto;*/
+		}
+		.logo{
+			width: 300px;
+			height: 75px;
+			line-height: 75px;
+			float: left;
+			background: url(http://climg.mukewang.com/590037f600016ce303000100.png) no-repeat;
+			background-size:200px 75px;
+		}
+		.nav{
+			height: 75px;
+			list-style: none;
+			line-height: 75px;
+			float: right;
+			padding-right: 40px;
+		}
+		.nav li{
+			list-style: none;
+			float: left;
+			font-family: "微软雅黑";
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            padding:0 10px;
+            margin-right: 20px;
+		}
+		
+
+        .container{
+			height: 850px; 
+			padding: 0 200px 0 300px;
+			min-height: 300px;
+			overflow: hidden;     
+        }
+        .middle,.left,.right{
+        	float:left;
+            position: relative;
+            height:100%;
+            padding-top:95px;;
+        }
+        .middle{
+        	width: 100%;
+        	background-color:rgb(255,192,203);
+        	background: url(http://climg.mukewang.com/590037e00001fab706000400.jpg) no-repeat;
+        }
+        .left{
+        	width: 300px;
+            background: #f00;
+            margin-left: -100%;
+            left: -300px;
+        }
+        .right{
+        	width: 200px;
+            background: #30a457;
+            margin-left: -200px;
+            right: -200px;
+        }
+
+        .footer{
+        	text-align: center;
+        	line-height: 75px;
+        	color: #fff;
+        }
+        .footer li{
+        	list-style: none;
+        	display: inline;
+        	padding-right: 20px;
+        }
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="header">
+		<div class="logo"></div>
+		<div class="nav">
+			<ul>
+				<li>课程</li>
+				<li>职业选择</li>
+				<li>实战</li>
+				<li>猿问</li>
+				<li>手记</li>
+			</ul>
+		</div>
+	    </div>
+	    <div class="container">
+		    <div class="middle">
+            </div>
+            <div class="left">
+                <h3>课程推荐</h3>
+                <ul>
+                    <li><span>职业路径</span><span>HTML5与CSS3实现动态网页</span></li>
+                    <li><span>职业路径</span><span>零基础入门Android语法与界面</span></li>
+                    <li><span>职业路径</span><span>IOS基础语法与常用控件</span></li>
+                    <li><span>职业路径</span><span>PHP入门开发</span></li>
+                    <li><span>职业路径</span><span>JAVA入门开发</span></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3>登录</h3>
+                <input class="account  input" type="text" placeholder="请输入邮箱/手机号">
+                <input class="password input" type="text" placeholder="6-16位密码，区分大小写，不能用空格">
+                <input class="login input" type="button" value="登录">
+            </div>
+	    </div>
+	    <div class="footer">
+		    <ul>
+                <li>网站首页</li>
+                <li>企业合作</li>
+                <li>人才招聘</li>
+                <li>联系我们</li>
+                <li>常见问题</li>
+                <li>友情链接</li>
+            </ul>
+	    </div>
+	</div>
+</body>
+</html>
