@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-12编程练习</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        /*h3,li{margin-bottom:30px;}*/
+        ul{list-style: none;}
+        .header{
+            width: 100%;
+            height: 100px;
+            background: black;
+            margin: 0 auto;
+        }
+        .logo{
+            width: 300px;
+            height: 100px;
+            line-height: 100px;
+            float: left;
+            background: url(http://climg.mukewang.com/58c0d2d900016ce303000100.png);
+        }
+        .nav{
+            list-style: none;
+            float: right;
+            padding-right: 40px;
+        }
+        .nav li{
+            float: left;
+            margin-right: 20px;
+        }
+        .nav li a{
+            text-decoration: none;
+            height: 100px;
+            line-height: 100px;
+            padding:0 10px;
+            font-family: "微软雅黑";
+            text-align: center;
+            font-size: 26px;
+            color: #fff;
+        }
+        .container{
+            width: 100%;
+            height: 1000px;
+            margin: 0 auto;
+            background: #ADD8E6;
+        }
+        .left{
+            width: 35%;
+            height: 1000px;
+            float: left;
+            /*border-right: 1px solid red;*/
+            position: relative;
+        }
+        .left .list-left{
+                  width: 300px;
+                  height: 300px;
+                  position: absolute;
+                  left: 200px;
+                  top: 100px;
+                  /*margin-left: -160px;
+                  margin-top: -150px;*/
+                  }
+        .left .list-left h3,.left .list-left li{margin-bottom:30px;}
+        span{ background:#ff9999; }
+        .middle{
+            width: 35%;
+            height: 1000px;
+            float: left;
+            position: relative;
+        }
+        .middle .list-middle{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 200px;
+            top: 100px;
+        }
+        .middle .list-middle h3,.middle .list-middle li{margin-bottom: 30px;}
+        .right{
+            width: 465px;
+            height: 1000px;
+            float: right;
+            border-left: 2px solid orange;
+            position: relative;
+
+        }
+        .right .list-right{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left:50px;
+            top: 100px;
+        }
+        .right .list-right h3,input{margin-bottom:30px;}
+        .right .list-right input{
+            display: block;
+            width: 100px;
+            height: 30px;
+        }
+        .right .list-right input:nth-child(3){background: red; color: #fff}
+        .footer{ width: 100%; height: 100px; background:black;text-align: center; } .footer li{ list-style: none; color:white; display: inline; line-height: 100px; padding-right: 20px;}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="logo"></div>
+            <ul class="nav">
+                <li><a href="#">免费课程</a></li>
+                <li><a href="#">职业路径</a></li>
+                <li><a href="#">实战</a></li>
+                <li><a href="#">猿问</a></li>
+                <li><a href="#">手记</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="left">
+                <div class="list-left">
+                    <h3>课程推荐</h3> 
+                    <ul>      <li><span>职业路径</span>&nbsp;&nbsp;&nbsp;HTML5与CSS3实现动态网页</li>      <li><span>职业路径</span>&nbsp;&nbsp;&nbsp;零基础入门Android语法与界面</li>       <li><span>职业路径</span>&nbsp;&nbsp;&nbsp;iOS基础语法与常用控件</li>       <li><span>职业路径</span>&nbsp;&nbsp;&nbsp;PHP入门开发</li>       <li><span>职业路径</span>&nbsp;&nbsp;&nbsp;JAVA入门开发</li>               
+                    </ul> 
+                </div>
+            </div>
+            <div class="middle">
+                <div class="list-middle">
+                  <h3>相关课程</h3>
+                  <ul>
+                      <li>HTML&nbsp;CSS&nbsp;JavaScript</li>
+                      <li>HTML5&nbsp;CSS3&nbsp;Jquery</li>
+                      <li>移动端基础&nbsp;移动端APP开发</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="list-right">
+                    <h3>登录</h3>
+                    <form action="">
+                        <input type="text" name="userid" placeholder="请输入账号">
+                        <input type="password" name="pwd" placeholder="请输入密码">
+                        <input type="submit" value="提交">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>网站首页</li>
+                <li>企业合作</li>
+                <li>人才招聘</li>
+                <li>联系我们</li>
+                <li>常见问题</li>
+                <li>友情链接</li>
+            </ul>
+                
+        </div>
+    </div>
+</body>
+</html>

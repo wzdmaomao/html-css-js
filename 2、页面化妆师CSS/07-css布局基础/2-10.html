@@ -49,7 +49,7 @@
 			width: 50%;
 			height: 1000px;
 			float: left;
-			border-right: 1px solid red;
+			/*border-right: 1px solid red;*/
             position: relative;
 		}
 		.left .list-left{
@@ -63,6 +63,21 @@
 		          }
 		.left .list-left h3,.left .list-left li{margin-bottom:30px;}
 		span{ background:#ff9999; }
+        .right{
+            width: 50%;
+            height: 1000px;
+            float: right;
+            position: relative;
+        }
+        .right .list-right{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 200px;
+            top: 100px;
+        }
+        .right .list-right h3,.right .list-right li{margin-bottom: 30px;}
+        .footer{ width: 100%; height: 100px; background:black;text-align: center; } .footer li{ list-style: none; color:white; display: inline; line-height: 100px; padding-right: 20px;}
 	</style>
 </head>
 <body>
@@ -85,9 +100,28 @@
 				    </ul> 
 				</div>
 			</div>
-			<div class="right"></div>
+			<div class="right">
+                <div class="list-right">
+                  <h3>相关课程</h3>
+                  <ul>
+                      <li>HTML&nbsp;CSS&nbsp;JavaScript</li>
+                      <li>HTML5&nbsp;CSS3&nbsp;Jquery</li>
+                      <li>移动端基础&nbsp;移动端APP开发</li>
+                  </ul>
+                </div>
+            </div>
 		</div>
-		<div class="foot"></div>
+		<div class="footer">
+            <ul>
+                <li>网站首页</li>
+                <li>企业合作</li>
+                <li>人才招聘</li>
+                <li>联系我们</li>
+                <li>常见问题</li>
+                <li>友情链接</li>
+            </ul>
+                
+        </div>
 	</div>
 </body>
 </html>

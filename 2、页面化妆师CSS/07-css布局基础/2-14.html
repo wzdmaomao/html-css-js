@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-14编程练习</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .container{
+            width: 1200px;
+            height: 400px;
+            background: #add8e6;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-top: -175px;
+            margin-left: -500px;
+        }
+        .big{width: 1200px;height: 300px;position: relative;}
+        .bigleft{width: 50%; height: 300px;float: left; position: relative; }
+        .bigimg1{
+            width: 360px; height: 215px;
+            background: url(http://climg.mukewang.com/58c0f808000129a303600215.jpg) no-repeat;
+            float: left;
+            position: absolute; top:38px; left:100px;
+         }
+         .bigright{
+            width: 50%; height: 300px;float: right; position: relative;
+         }
+        .bigimg2{width: 360px; height: 215px; background: url(http://climg.mukewang.com/58c0f819000198a703600214.jpg) no-repeat; float: right; position: absolute; top:38px; right: 100px;}
+        .small{width: 1200px;height: 100px; background-color:rgb(255,182,193); }
+        .left{width: 400px;height: 100px;float: left; position: relative;}
+        .leftimg{width: 200px;height: 60px; background: url(http://climg.mukewang.com/58c0f81d0001fe4402000060.jpg) no-repeat; position: absolute; left: 50%;top:50%;margin-top: -30px;margin-left: -100px;}
+        .middle{width: 400px;height: 100px;float: left; position: relative;}
+        .middleimg{width: 200px;height: 60px; background: url(http://climg.mukewang.com/58c0f8220001dfce02000060.jpg) no-repeat; position: absolute; left: 50%;top:50%;margin-top: -30px;margin-left: -100px;}
+        .right{width: 400px;height: 100px;float: left; position: relative;}
+        .rightimg{width: 200px;height: 60px; background: url(http://climg.mukewang.com/58c0f8780001c74602000060.jpg) no-repeat; position: absolute; left: 50%;top:50%;margin-top: -30px;margin-left: -100px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="big">
+            <div class="bigleft">
+                <div class="bigimg1"></div>
+            </div>
+            <div class="bigright">
+                <div class="bigimg2"></div>
+            </div>
+        </div>
+        <div class="small">
+            <div class="left">
+                <div class="leftimg"></div>
+            </div>
+            <div class="middle">
+                <div class="middleimg"></div>
+            </div>
+            <div class="right">
+                <div class="rightimg"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
