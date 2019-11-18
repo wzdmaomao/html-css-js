@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3-3编程练习</title>
+    <style>
+        *{margin: 0;padding:0;}
+        li{list-style: none;}
+        .page{
+            font-family:"宋体","微软雅黑",serif;
+        }
+        .header,.footer{
+            width: 100%;height: 75px;background: black;position: fixed;color: #fff;
+            float: left;
+        }
+        .header{
+            left:0;
+            top:0; 
+            z-index: 999;          
+        }
+        .header .logo{
+            width: 200px;
+            height: 75px;
+            line-height: 75px;
+            position: absolute;
+            background: url(http://climg.mukewang.com/590037f600016ce303000100.png);
+            background-size: 200px 70px;
+        }
+        .header .nav{
+            float: right;
+            line-height: 75px;
+            /*margin-right: 40px;*/
+
+
+        }
+        .header .nav li{
+            float: left;
+            
+            padding-right: 40px;
+        }
+        .header .nav li:hover{
+            color:orange;
+            cursor:pointer;
+        }
+        .footer{
+            text-align: center;
+            bottom: 0;
+            left:0;
+        }
+        .footer li{
+            display: inline;
+            line-height: 75px;
+            padding-right: 50px;
+        }
+        .container{
+         margin:75px  270px  75px  400px;
+         width:auto; 
+         height:800px;
+
+        }
+        .middle,.left,.right{
+            position: relative;
+            float: left;
+            height:800px;
+            min-height: 300px;
+        }
+        .middle{
+            width: 100%;
+            background:pink;
+        }
+        .middle .middleimg{
+            width: 600px;height: 400px;
+            background: url(http://climg.mukewang.com/590037e00001fab706000400.jpg);
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            margin-left: -300px;
+
+        }
+        .left{
+            width: 400px;
+            background-color:rgb(255,239,219);
+            margin-left: -100%;
+            left:-400px;
+        }
+        .left .leftlist{
+            width: 320px;
+            height: 400px;
+            position: absolute;
+            left:50px;
+            top: 100px;
+        }
+        .left .leftlist h3,li{margin-bottom:30px;}
+        span{margin: 0 10px;}
+        span:nth-child(1){ background:#ff9999; }
+        .right{
+            width:270px;
+            margin-left:-270px;
+            right:-270px;
+            background-color:rgb(173,216,230);
+           }
+        .rightlogin{
+            width: 200px;height: 100px;
+            position: absolute; left: 5px;top: 100px;
+        } 
+        .right h3,input{
+            margin-bottom:30px;
+        } 
+        .right .rightlogin input{
+            width: 200px;
+            display: block;
+            height: 30px;
+        } 
+        .buttoncolor{background: red; color: #fff;}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+        <div class="logo"></div>
+        <div class="nav">
+            <ul>
+                <li>课程</li>
+                <li>职业选择</li>
+                <li>实战</li>
+                <li>猿问</li>
+                <li>手记</li>
+            </ul>
+        </div>
+        </div>
+        <div class="container">
+            <div class="middle">
+                <div class="middleimg"></div>
+            </div>
+            <div class="left">
+                <div class="leftlist">
+                    <h3>课程推荐</h3>
+                <ul>
+                    <li><span>职业路径</span><span>HTML5与CSS3实现动态网页</span></li>
+                    <li><span>职业路径</span><span>零基础入门Android语法与界面</span></li>
+                    <li><span>职业路径</span><span>IOS基础语法与常用控件</span></li>
+                    <li><span>职业路径</span><span>PHP入门开发</span></li>
+                    <li><span>职业路径</span><span>JAVA入门开发</span></li>
+                </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="rightlogin">
+                <h3>登录</h3>
+                <input type="text" placeholder="请输入邮箱/手机号">
+                <input type="text" placeholder="6-16位密码，区分大小写，不能用空格">
+                <input class="buttoncolor" type="button" value="登录">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>网站首页</li>
+                <li>企业合作</li>
+                <li>人才招聘</li>
+                <li>联系我们</li>
+                <li>常见问题</li>
+                <li>友情链接</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
