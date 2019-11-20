@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+    <script>
+        var msg="hello world";
+        var ids=7899;
+        var idstr=ids.toString();
+        console.log(typeof idstr);
+        console.log(String(ids));
+        var m;
+        //console.log(m.toString());//报错：Uncaught TypeError: Cannot read property 'toString' of undefined
+        console.log(String(m));
+
+        var isStudent=true;
+        var isChild=false;
+        console.log(typeof isStudent);
+        var f = isStudent.toString(); 
+        console.log(f);
+        console.log(typeof(f));
+
+        var x=1222;
+        console.log(Boolean(x));
+        var z=0;
+        console.log(Boolean(z));//除了0以外的数字的bool都是true
+
+        var str="";//
+        console.log(Boolean(str));//空字符转换bool为false
+        var strs="www";
+        console.log(Boolean(strs));
+
+        var y;
+        console.log(Boolean(y)); //undefined的bool是false的
+        var times=null;
+        console.log(Boolean(times)); //null的的bool是false的
+
+    </script>
+</body>
+</html>
