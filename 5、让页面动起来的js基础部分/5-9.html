@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>其他操作符</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //复合赋值操作符
+        var a=10;
+            b=20;
+    	    a+=5;//a=a+5;
+            b%=4; //b=b%4
+        var str="hello";
+        str+="world";//str= str+"world";
+        console.log(a);
+        console.log(b);
+        console.log(str);
+        //比较操作符
+        console.log(a>b);
+        var x=10,
+            y="10",
+            m=15,
+            z1=x==y;  //值是否相等
+            z2=x===y; //全等
+            n1=y!=m;
+            n2=x!=y;
+            n3=x!==y;
+        console.log(z1);
+        console.log(z2);
+        console.log(n1);
+        console.log(n2);
+        console.log(n3);
+        console.log(null==undefined);
+        console.log(null===undefined);
+        //三元操作符
+        var soce=85;
+        var result=(soce>=60)?"及格":"不及格";
+        console.log(result);
+    </script>
+</body>
+</html>
