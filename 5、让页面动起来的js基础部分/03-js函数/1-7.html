@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1-7函数的返回值</title>
+</head>
+<body>
+    <script>
+        //声明一个函数
+        function myFun(){
+            alert("我是一个函数");
+        }
+        //函数的调用
+        // myFun();
+        //声明带参数的函数
+        function add(num1,num2){
+            var sum=num1+num2;
+            // alert(num1+"+"+num2+"="+sum);
+            return sum;
+        }
+        // console.log(add(3,5));
+        // document.write(add(22222,333333));
+        
+        function myFunction(arg){
+            //如果arg非数字,不做如何操作,否则返回arg的12倍
+            if(isNaN(arg)){
+                return;
+            }else{
+                return arg*2;
+            }
+        }
+        console.log(myFunction("adb"));
+        document.write(myFunction(123));
+    </script>
+</body>
+</html>

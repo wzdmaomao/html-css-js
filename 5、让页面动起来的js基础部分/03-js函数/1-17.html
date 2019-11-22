@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1-17求任意一组数的平均数</title>
+</head>
+<body>
+    <script>
+        //求任意一组数的平均数
+        function getAvg(){
+            var sum=0,len=arguments.length,i;
+            for(i=0;i<len;i++){
+                sum +=arguments[i];
+            }
+            return sum/len;
+
+        }
+        console.log(getAvg(111,222,333,444));
+    </script>
+</body>
+</html>

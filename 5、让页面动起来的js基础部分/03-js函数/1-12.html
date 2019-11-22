@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1-12arguments</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function inner(){
+            console.log(arguments.length);
+            console.log(arguments[1]); //索引是从0开始的正整数
+        }
+        // inner(10,6);
+        function add(num1,num2){
+            arguments[0]=99;
+            console.log(num1);
+        }
+        add(55,88);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1-5if语句的嵌套</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var password=prompt("请输入您的密码");
+        //判断密码的长度，
+        if(password.length!=6){
+           alert("请输入6位的数字密码");
+        }else{
+            if(isNaN(password)){
+                alert("密码必须要是数字");  
+            }else{
+                alert("密码输入正确");
+            }
+            
+        }
+    </script>
+</body>
+</html>

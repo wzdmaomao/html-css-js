@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-18 while循环</title>
+</head>
+<body>
+    <script>
+        var i=1;
+        while(i<=100){
+            document.write(i+"<br/>");
+            i+=1;
+        }
+        var j=1;
+        do{
+            if(j%2==0){
+                // console.log(j);
+            }
+            j++;
+        }while(j<=10);
+        //计算1+2+3....+100
+        var sum=0,n=1;
+        while(n<=100){
+            sum+=n;
+            n++;
+        }
+        console.log(sum);
+    </script>
+</body>
+</html>

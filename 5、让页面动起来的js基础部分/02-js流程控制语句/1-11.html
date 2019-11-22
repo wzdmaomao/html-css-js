@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1-11switch</title>
+</head>
+<body>
+    <script>
+        var week=new Date().getDay();
+        var weekstr="";
+        console.log(week);
+        //多条件的判断switch
+        switch(week){
+            case 0:
+            weekstr="日";
+            break;
+            case 1:
+            weekstr="一";
+            break;
+            case 2:
+            weekstr="二";
+            break;
+            case 3:
+            weekstr="三";
+            break;
+            case 4:
+            weekstr="四";
+            break;
+            case 5:
+            weekstr="五";
+            break;
+            default:
+            weekstr="六";
+            break;           
+        }
+        document.write("今天是星期"+weekstr);
+    </script>
+</body>
+</html>

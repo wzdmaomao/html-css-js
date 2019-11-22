@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结合数据类型和流程控制</title>
+</head>
+<body>
+    <script>
+        var str="abc123";
+        var num=parseInt(str);
+        console.log(num);
+        if(num==NaN){  //NaN和任何内容都不相等，包括它本身
+            alert(NaN);
+        }else if(num==123){
+            alert(123);
+        }else if(typeof num=="number"){
+            alert("num");
+        }else{
+            alert("str");
+        }
+    </script>
+</body>
+</html>
