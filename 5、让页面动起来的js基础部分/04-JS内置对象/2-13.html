@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2-13数组方法（push、unshift pop shift）</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	//push加到数组尾部
+    	var colors=new Array("red","green");
+    	var len=colors.push("blue","yellow","black");
+    	// console.log(colors);
+    	// console.log(len);
+        //unshift加到数组开头
+        var nums=[2,7,8,6];
+        var size=nums.unshift(99,66);
+        // console.log(size);
+        // console.log(nums);
+        //pop删除最后一个元素
+        var n=nums.pop();
+        console.log(nums);
+        //shitf删除第一个元素
+        var m=colors.shift();
+        console.log(m);
+
+    </script>
+</body>
+</html>
