@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-28 splice方法</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr = ['Microsoft', 'Apple', 'Yahoo', 'AOL', 'Excite', 'Oracle'];
+        //删除
+        //  var delArr=arr.splice(2,3);
+        // console.log(arr);
+        // console.log(delArr);
+        //插入
+        var insertArr=arr.splice(3,0,'Google', 'Facebook');
+        console.log(arr);
+        console.log(insertArr);
+        //替换
+        var replaceArr=arr.splice(1,2,"x","y","z");
+        console.log(arr);
+        console.log(replaceArr);
+    </script>
+</body>
+</html>

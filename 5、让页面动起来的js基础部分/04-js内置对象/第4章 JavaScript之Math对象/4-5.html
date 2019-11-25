@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>math对象（random）</title>
+</head>
+<body>
+    <script>
+        var random=Math.random();
+        console.log(random);
+        //生成一个n到m之间的随机整数
+        function getRandomByFloor(n,m){
+            var choise=m-n+1;
+            return Math.floor(Math.random()*choise+n);
+        };
+        function getRandomByCeil(n,m){
+            var choise=m-n;
+            return Math.ceil(Math.random()*choise+n);
+        }
+        var random1=getRandomByFloor(2,6);
+        console.log(random1);
+        var random2=getRandomByCeil(2,6);
+        console.log(random2);
+    </script>
+</body>
+</html>

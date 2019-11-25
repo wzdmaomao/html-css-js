@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string(split和replace)</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var str="welcome-to-beijing";
+        var arr=str.split("-");
+        var date='2019/11/25';
+        var dateArr=date.split('/');
+        console.log(arr);
+        console.log(dateArr);
+        var tel='010-222222,020-333333,040-33331';
+        //newTel被替换之后的字符串
+        var newTel=tel.replace(/,/g,'  ');
+        console.log(newTel);
+    </script>
+</body>
+</html>

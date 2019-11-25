@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3-26string(toUpperCase和toLowerCase)</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //把例如：border-left-color 改变为borderLeftColor
+        
+        function camelback(str){
+            var arr=str.split('-'),newStr=arr[0];
+            for(var i=1; i<arr.length;i++){
+                var word=arr[i];
+                newStr+=word.charAt(0).toUpperCase()+word.slice(1);
+            }
+            return newStr;
+        }
+        var camelFormat=camelback('get-element-by-id');
+        console.log(camelFormat);
+    </script>
+</body>
+</html>

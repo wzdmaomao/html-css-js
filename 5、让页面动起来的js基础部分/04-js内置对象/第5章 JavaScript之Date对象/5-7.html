@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5-7Date</title>
+</head>
+<body>
+    <script>
+        var today=new Date();
+        //today.setFullYear(2022);
+        //console.log(today);
+        //50天之后是星期几
+        //方法1
+        today.setDate(today.getDate()+50);
+        console.log(today, today.getDay());
+        //方法2
+        var weeks=["日","一","二","三","四","五","六"],
+            year=today.getFullYear(),
+            month=today.getMonth(),
+            day=today.getDate();
+        var temp=new Date(year,month,day+50);
+        console.log("50天后的今天是："+temp.getFullYear()+'-'+(temp.getMonth()+1)+'-'+temp.getDate()+'-'+'星期'+weeks[temp.getDay()]);
+    </script>
+</body>
+</html>

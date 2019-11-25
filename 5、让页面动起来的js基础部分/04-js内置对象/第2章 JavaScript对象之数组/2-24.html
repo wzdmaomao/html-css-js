@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-24数组方法（concat和slice）</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr1=["a","b","c"],
+            arr2=['d','e',1,3],
+            arr3;
+        //concat
+        arr3=arr1.concat(arr2,['m',9,8]);
+        console.log(arr3);
+        //slice截取Array的部分元素(start,end)截取的是start到end-1
+        var colors=["red","green","blue","yellow","orange"];
+        var newColors1=colors.slice(1);
+        console.log(newColors1);
+        var newColors2=colors.slice(1,3);
+        console.log(newColors2);
+        var newColors3=colors.slice(-2,-1);
+        console.log(newColors3);
+         // 完成以下代码段，实现b数组对a数组的拷贝，方法越多越好
+        var a=[1,"yes",3],
+            b;
+        var b=new Array();
+        // for(var i=0;i<a.length;i++){
+        //     b.push(a[i]);
+        // }
+        // b=[].concat(a);
+        b=a.slice();
+        console.log(b);
+    </script>
+</body>
+</html>

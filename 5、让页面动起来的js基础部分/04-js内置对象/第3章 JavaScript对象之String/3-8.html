@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string(slice()-substring()和substr())</title>
+</head>
+<body>
+    <script>
+        var str="hello world";
+        // console.log(str.slice(7,10));
+        // console.log(str.slice(-3));
+        // console.log(str.slice(-7,-2));
+        // substring和slice的区别就是参数是负数的时候转化为0；
+        // substring会把较小的数做为开始
+        // console.log(str.substring(-7,5));
+        // console.log(str.substring(2,-5)); //he
+        //substr
+        console.log(str.substr(6,3));
+        console.log(str.substr(-5,4));
+        console.log(str.substr(3,-2));
+    </script>
+</body>
+</html>

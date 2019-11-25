@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数组的方法（join和sort）</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//join
+		var nums=[2,4,5];
+		var str=nums.join();
+		console.log(str);
+		console.log(typeof(str));
+		var words=["border","left","color"];
+		var str_words=words.join("-");
+		console.log(str_words);
+		//reverse
+		nums.reverse();
+		console.log(nums);
+		var strs=['a','b','c','d'];
+		//返回dcba这个字符串
+		var newstr=strs.reverse().join("");
+		console.log(newstr);
+		//sort
+		var arr=[9,23,15,88,12];
+		console.log(arr.sort());//[12, 15, 23, 88, 9]按字符编码排序的
+		//降序
+		var jx=arr.sort(function (a,b){return b-a});
+		console.log("降序："+jx);
+		//升序
+		var sx=arr.sort(function(a,b){return a-b});
+		console.log("升序:"+sx);
+	</script>
+</body>
+</html>

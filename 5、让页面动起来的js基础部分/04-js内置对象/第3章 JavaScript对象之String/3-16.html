@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3-16 string综合应用</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //获取扩展名
+        var url="index.txt";
+        function getFileFormat(url){
+            var pos=url.lastIndexOf(".");
+            return url.substr(pos);
+        }
+        var formatName=getFileFormat(url);
+        var picFormatName=getFileFormat("123111.png");
+        console.log(formatName);
+        console.log(picFormatName);
+    </script>
+</body>
+</html>
