@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>innerHTML</title>
+    <title>字符串的最左边不能出现空白，IE6-8会自动移除它</title>
     <script src="domReady.js"></script>
     <script>
         myReady(function(){
             var content = document.getElementById("content");
-            var str = "<p>This is a <strong>paragraph</strong> with a list following it.</p>"
-                        + "<ul>"
-                        + "<li>Item 1</li>"
-                        + "<li>Item 2</li>"
-                        + "<li>Item 3</li>"
-                        + "</ul>";
+            var str = "  This is a with a list following it.";
             content.innerHTML = str;
-            alert(content.innerHTML);
-      });
+        });
     </script>
 </head>
 <body>
