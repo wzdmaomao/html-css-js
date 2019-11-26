@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-2create系列创建节点的方法</title>
+    <script src="domReady.js"></script>
+    <script>
+        myReady(function(){
+            // var ul = document.getElementById("myList");
+            // var li = document.createElement("li");
+            // var txt = document.createTextNode("Item");
+            // li.appendChild(txt);
+            // ul.appendChild(li);
+            var comment = document.createComment("A comment") //创建注释文本
+            var fragment = document.createDocumentFragment();
+            var ul = document.getElementById('myList');
+            var li = null;
+            for(var i=0;i<3;i++){
+                li = document.createElement("li");
+                li.appendChild(document.createTextNode("Item" + (i+1)));
+                fragment.appendChild(li);               
+            }
+            ul.appendChild(fragment);
+            document.body.insertBefore(comment, document.body.firstChild);
+        });
+    </script>
+</head>
+<body>
+    <ul id="myList"></ul>
+</body>
+</html>
