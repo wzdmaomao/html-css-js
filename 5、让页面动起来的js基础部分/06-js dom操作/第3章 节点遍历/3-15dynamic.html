@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>类数组对象的动态性（一）</title>
+    <script src="domReady.js"></script>
+    <script>
+      myReady(function(){
+        var divs = document.getElementsByTagName("div");
+        var len = divs.length; //如果不先把长度赋值给变量，直接在while里使用会死循环
+        var i = 0;
+        while (i<len) {
+            document.body.appendChild(document.createElement("div"));
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>

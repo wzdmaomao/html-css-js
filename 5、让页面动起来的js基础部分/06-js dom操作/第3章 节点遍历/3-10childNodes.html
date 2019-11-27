@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NodeList对象的特点</title>
+    <script src="domReady.js"></script>
+    <script>
+        myReady(function(){
+            var box = document.getElementById('box');
+            var nodes = box.childNodes;
+            // console.log(nodes);
+            // console.log(nodes[1]);
+            // console.log(nodes.item(1));
+            function makeArray(nodeList){
+                var arr = null;
+                try {
+                    return Array.prototype.slice.call(nodeList);
+                } catch (e) {
+                    arr = new Array();
+                    for(var i = 0, len = nodeList.length; i < len; i++){
+                        arr.push(nodeList[i]);
+                    }
+                }
+                return arr;                
+            }
+            var newNodeList = makeArray(nodes);
+            newNodeList.push("<li>节点四</li>");
+            console.log(newNodeList);
+        });
+    </script>
+</head>
+<body>
+    <ul id="box">  
+        <li>节点一</li>
+        <li>节点二</li>
+        <li>节点三</li>  
+    </ul>    
+</body>
+</html>
