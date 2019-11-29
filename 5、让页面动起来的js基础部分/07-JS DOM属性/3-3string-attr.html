@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>string attributes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="domReady.js"></script>
+    <script>
+      myReady(function(){
+        var p = document.getElementById('sentence');
+        console.log(p.innerHTML);
+        var author = document.getElementById('author');
+        author.className = 'light';
+      });
+    </script>
+  </head>
+  <body>
+    <p style="text-align:center" id="title" class="large"><bdo dir="rtl">芙蓉楼送辛渐</bdo></p>
+    <p style="text-align:center" id="author"><bdo dir="rtl">王昌龄</bdo></p>
+    <p style="text-align:center" id="sentence"><bdo dir="rtl">寒雨连江夜入吴，</bdo></p>
+    <p style="text-align:center" id="sentence"><bdo dir="rtl"><bdo dir="rtl">平明送客楚山孤。</bdo></p>
+    <p style="text-align:center" title="洛阳亲友如相问，"><bdo dir="rtl">洛阳亲友如相问，</bdo></p>
+    <p style="text-align:center" title="一片冰心在玉壶。"><bdo dir="rtl"><bdo dir="rtl">一片冰心在玉壶。</bdo></p>
+    <a href="http://www.diyifanwen.com/sicijianshang/tangshisanbaishou/">更多</a>
+    <img src="x.jpg" alt="欧美小孩">
+  </body>
+</html>
