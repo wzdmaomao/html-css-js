@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Event对象常用属性与方法</title>
+    <style>
+        #gandu{
+            height: 2000px;
+            background: lightgreen;
+        }
+    </style>
 </head>
 <body>
     <button id="myBtn">点击我</button>
@@ -12,6 +18,7 @@
         <div id="child">点击我</div>
     </div>
     <a href="http://baidu.com" id="a">跳转链接</a>
+    <div id="gandu"></div>
     <script>
         var mybtn = document.getElementById("myBtn");
         // mybtn.addEventListener("click",function(event){
@@ -67,6 +74,15 @@
         child.addEventListener("click", function(event){
             alert("child");
             event.stopPropagation();
+        });
+
+        //clientY   pageY   screenY
+			//clientY就是指浏览器顶部底边到鼠标的位置，不计算滚动轴的距离
+			//pageY就是指浏览器顶部底边到鼠标位置，但是它计算滚动轴的距离
+			//screenY就是指屏幕顶部到鼠标位置
+        var gaodu = document.getElementById("gandu");
+        gaodu.addEventListener("click",function(event){
+            alert("clientY:"+event.clientY+"; pageY:"+event.pageY+";  screenY:"+event.screenY);
         });
     </script>
 </body>
