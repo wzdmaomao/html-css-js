@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>IE的事件处理程序</title>
+	</head>
+	<body>
+		<button id="myBtn">按钮</button>
+		<script type="text/javascript">
+			//html属性添加事件
+			//DOM0级事件绑定     兼容所有浏览器
+			//DOM2级事件绑定  addEventListener:Chrome firefox IE9等     attachEvent： IE8及IE8以下的浏览器
+            var btn = document.getElementById("myBtn");
+            var clickme = function(){
+                alert("clicked");
+            }
+            btn.attachEvent("onclick", clickme);
+            // btn.attachEvent("onclick", function(){
+            //     alert("二clicked");
+            // });
+            btn.detachEvent("onclick", clickme);
+            //this指向window
+			btn.attachEvent("onclick",function(){
+				alert(this === window);
+			})
+		</script>
+	</body>
+
+</html>

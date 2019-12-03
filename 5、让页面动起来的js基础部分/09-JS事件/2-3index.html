@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>事件定义</title>
+</head>
+<body>
+    <button onclick="alerWindow()">点击我</button>
+    <button id="btn">DOM0级事件绑定方式</button>
+    <button id="btn2">DOM2级事件绑定方式</button>
+    <script>
+        /*
+		 * 1、事件对象  button
+		 * 2、事件对象绑定一个事件类型
+		 * 3、事件句柄
+		 */
+        function alerWindow(){
+            alert("我被点击了");
+        }
+        var Dom0 = function(){
+            alert("DOM0级事件绑定方式");
+        }
+        var Dom0_1 = function(){
+            alert("DOM0_1级事件绑定方式");
+        }
+        var btn = document.getElementById("btn");
+        btn.onclick = Dom0;
+        btn.onclick = Dom0_1;
+        var btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click", function(){
+            alert("DOM2级事件绑定方式");
+        }, false);
+        btn2.addEventListener("click", function(){
+            alert("DOM2_1级事件绑定方式");
+        }, false);
+
+        /*
+			 *1、html中定义   html中写js代码 ，强耦合，不利于复用代码  xxx
+			 *2、DOM0级事件，事件对象的属性添加绑定事件， 松耦合，html与js代码分离了， 缺点：就是有且只能绑定一个事件类型
+			 *3、DOM2级事件，通过 addEventListener函数绑定事件， 
+			 * 优点：松耦合、绑定多个事件，事件捕获和事件冒泡
+			 */
+    </script>
+</body>
+</html>
